@@ -7,23 +7,60 @@ services:
     restart: unless-stopped
     ports:
       - "8000:80"   # host:container
+    volumes:
+      - ./app:/var/www/html
     environment:
-      - DB_HOST=db
-      - DB_USER=root
-      - DB_PASSWORD=secret
-      - DB_NAME=vmsdb
+      MYSQL_HOST: db
+      MYSQL_DATABASE: aatcabuj_visitors_version_2
+      MYSQL_USER: aatcabuj_admin
+      MYSQL_PASSWORD: Sgt.pro@501
     depends_on:
       - db
+    networks:
+      - vmsnet
 
   db:
-    image: mysql:8.0
-    container_name: vms-mysql-server
-    restart: unless-stopped
+    image: mysql:5.7
+    container_name: vms-mysql
+    restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_DATABASE=vmsdb
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: aatcabuj_visitors_version_2
+      MYSQL_USER: aatcabuj_admin
+      MYSQL_PASSWORD: Sgt.pro@501
     volumes:
-      - mysql_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - vmsnet
+
+networks:
+  vmsnet:
 
 volumes:
-  mysql_data:
+  db_data:
+
+
+#     environment:
+#       - DB_HOST=db
+#       - DB_USER=root
+#       - DB_PASSWORD=secret
+#       - DB_NAME=vmsdb
+#     depends_on:
+#       - db
+
+#   db:
+#     image: mysql:8.0
+#     container_name: vms-mysql-server
+#     restart: unless-stopped
+#     environment:
+#       - MYSQL_ROOT_PASSWORD=secret
+#       - MYSQL_DATABASE=vmsdb
+#     volumes:
+#       - mysql_data:/var/lib/mysql
+
+# volumes:
+#   mysql_data:
+
+
