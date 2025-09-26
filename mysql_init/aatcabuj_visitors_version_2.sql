@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 26, 2025 at 08:45 AM
+-- Generation Time: Sep 26, 2025 at 11:10 AM
 -- Server version: 11.4.8-MariaDB
 -- PHP Version: 8.4.11
 
@@ -955,7 +955,8 @@ INSERT INTO `visitors` (`id`, `name`, `host_name`, `phone`, `country_code`, `ema
 (971, 'SAMSON EKELE', 'Walk-In', '09076787297', NULL, '', NULL, 'checked_out', 0, NULL, '2025-09-25 11:18:39', NULL, 0, NULL, NULL, 'FIRST BANK', '2025-09-25', 'TO DELIVER POS MACHINE- DORCAS OLUWATOYE\\r\\n\\r\\nCARD NO-001', '2025-09-25 12:18:39', '2025-09-25 13:04:11', NULL, 0, NULL, NULL, '12:18:00', 'Floor 6 - Right Wing', 0, 0, 0, NULL, '2025-09-25 12:04:11', '7D106269', 1, 6, 'reception'),
 (972, 'ENGR TUNDE+1', 'Walk-In', '08033468400', NULL, '', NULL, 'checked_out', 0, NULL, '2025-09-25 13:36:23', NULL, 0, NULL, NULL, 'AEB', '2025-09-25', 'CONTRACTORS OF THE AFRICAN ENERGY BANK- TAOFIK YUSUF', '2025-09-25 14:36:23', '2025-09-25 16:57:19', NULL, 0, NULL, NULL, '14:35:00', 'Floor 3 - Left Wing', 0, 0, 0, NULL, '2025-09-25 15:57:19', '54BB6AB4', 1, 6, 'reception'),
 (973, 'TAYO ADELAKUN ', 'Walk-In', '08035274661', NULL, '', NULL, 'checked_out', 0, NULL, '2025-09-25 13:56:30', NULL, 0, NULL, NULL, 'ADEKOIME', '2025-09-25', 'INQUIRY ON IMPORTATION OF HIS PRODUCT', '2025-09-25 14:56:30', '2025-09-25 16:57:09', NULL, 0, NULL, NULL, '14:54:00', 'Ground Floor', 0, 0, 0, NULL, '2025-09-25 15:57:09', 'A37E73EC', 1, 6, 'reception'),
-(974, 'Michael Moskhovitch', 'Oluwaseun Yinka Alabi ', 'Nil', NULL, '', NULL, 'checked_out', 0, NULL, '2025-09-25 16:15:37', 40, 0, NULL, NULL, 'Nil', '2025-09-25', 'Official\\r\\n\\r\\nCard No- 015', '2025-09-25 17:15:37', '2025-09-25 17:16:31', NULL, 0, NULL, NULL, '17:15:00', 'Floor 6 - Left Wing', 0, 0, 0, NULL, '2025-09-25 16:16:31', '74613377', 1, 6, 'reception');
+(974, 'Michael Moskhovitch', 'Oluwaseun Yinka Alabi ', 'Nil', NULL, '', NULL, 'checked_out', 0, NULL, '2025-09-25 16:15:37', 40, 0, NULL, NULL, 'Nil', '2025-09-25', 'Official\\r\\n\\r\\nCard No- 015', '2025-09-25 17:15:37', '2025-09-25 17:16:31', NULL, 0, NULL, NULL, '17:15:00', 'Floor 6 - Left Wing', 0, 0, 0, NULL, '2025-09-25 16:16:31', '74613377', 1, 6, 'reception'),
+(975, 'SALAWU FUNMILAYO', 'Walk-In', '09062976218', NULL, '', NULL, 'checked_in', 0, NULL, '2025-09-26 08:27:37', NULL, 0, NULL, NULL, 'SHEPHERDHILL SECURITY', '2025-09-26', 'TO PICK UP AN ITEM FROM MERCY NWANJA', '2025-09-26 09:27:37', NULL, NULL, 0, NULL, NULL, '09:25:00', 'Floor 6 - Right Wing', 0, 0, 0, NULL, '2025-09-26 08:27:37', 'FB4C4785', 1, 6, 'reception');
 
 --
 -- Triggers `visitors`
@@ -1168,7 +1169,7 @@ ALTER TABLE `reception_notifications`
 -- AUTO_INCREMENT for table `visitors`
 --
 ALTER TABLE `visitors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=975;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=976;
 
 --
 -- AUTO_INCREMENT for table `visitor_categories`
